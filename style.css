@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    grid-auto-rows: auto;
+    row-gap: 10px;
+    column-gap: 10px;
+    background-image: linear-gradient(blue,red,blue);
+    margin-right: auto;
+    
+}
+
+#logo{
+    grid-column: 1 /span 2;
+    place-content: stretch;
+}
+
+#heading{
+    grid-column: 5/span 7;
+    display: grid;
+    place-items: stretch;
+    justify-items: center;
+    color:beige;
+} 
+   
+#navBar{
+    grid-column: 3/span 12;
+}
+    #navBar ul{
+        display: flex;
+        justify-content: stretch;
+    }
+    #navBar ul > li{
+        list-style-type: none;
+    }
+    #navBar ul a{
+        display: inline-flex;
+        border: 3px solid beige;
+        border-radius: 7px;
+        padding: 3px 24px;
+        margin: 0px 23px;
+        color: bisque;
+        text-decoration: none;
+    }
+    #navBar .active{
+        background-color: cadetblue;
+        color: gold;
+        
+    }
+    #navBar ul a:hover:not(.active){
+        background-color: blanchedalmond;
+        color: cadetblue;
+        text-transform: uppercase;
+        font-size: 1em;
+    }
+
+#search-bar{
+    grid-column: 12/span 12;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    border: 2px solid beige;
+    border-radius: 7px;
+    margin-left: auto;
+    overflow: hidden;
+}
+    #searchButton{
+        background-color: blue;
+        color: blanchedalmond;
+        text-transform:capitalize;
+        font-size: 0.85em;
+        font-style: italic;
+    }
+
+.sub-text{
+    grid-column: 4/span 5;
+    display: grid;
+}
+    .sub-text > p{
+        display: inline-block;
+        background-color: bisque;
+        color: cadetblue;
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+#main-body{
+    grid-column: 2/span 12;
+    display: grid;
+} 
+    #menu{
+        display: inline-flex;
+        flex-flow: row wrap;
+        margin-left: 25px;
+        
+    }
+    .textbody{
+        display: inline-block;
+        margin: 0px auto ;
+    }
+    .textbody > h3{
+        color: cadetblue;
+        text-transform: uppercase;
+        text-decoration: underline;
+        font-size: 1em;
+        
+    }
+    .textbody > ul{
+        color: cadetblue;
+        text-transform: capitalize;
+        list-style-type: none;
+    }
+
+figure{
+    border: 2px solid cadetblue;
+    border-radius: 8px;
+}
+
+#contact-info{
+    display: grid;
+    grid-column: 3/span 5;
+    margin-top: 30px;
+}
+    #contact-info >p{
+        display: inline-block;
+        text-align: center;
+        background-color: blanchedalmond;
+        text-transform: uppercase;
+        text-decoration: underline;
+        font-size: 1.7em; 
+    }
+
+#form-info{
+    display: grid;
+    grid-column: 3/span 5;
+    place-content: center;
+    border: 2px solid cadetblue;
+    border-radius: 8px;
+    background-color: blanchedalmond;
+    color: cadetblue;
+}
+
+
+#form-field{
+    display: grid;
+    grid-column: 11/span 11;
+    place-content: center;
+    border: 2px solid cadetblue;
+    border-radius: 8px;
+    background-color: blanchedalmond;
+    color: cadetblue;
+}
+    #form-field >h4{
+        color: cadetblue;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: underline;
+        font-size: 1.7em;
+    }
