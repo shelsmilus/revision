@@ -195,8 +195,19 @@
         </fieldset>
         
         <button type="submit" id="btsubmit" style="text-align: center;">Submit</button>
-        
-        
+    </form>
+
+    <form method="post" id="selection">
+        <input list="mailMan" name="mailloc" placeholder="Locate" required>
+        <datalist id="mailMan">
+            <option value="istanbul"></option>
+            <option value="berlin"></option>
+            <option value="kruk"></option>
+            <option value="washginton"></option>
+            <option value="minks"></option>
+        </datalist>
+        <br>
+        <button type="submit" style="float: right;">Enter</button>
     </form>
     <script src="script.js"></script>
 </body>
